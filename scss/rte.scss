@@ -1,0 +1,39 @@
+@import "../bower_components/components-font-awesome/scss/fontawesome.scss";
+@import "variablen.scss";
+$fa-font-path: "typo3conf/ext/giesenwebentwicklung/Resources/Public/Fonts" !default;
+@import "../bower_components/bootstrap/scss/bootstrap-reboot.scss";
+@import "../bower_components/bootstrap/scss/type";
+
+
+.text-left   { text-align: left !important; }
+.text-right  { text-align: right !important; }
+.text-center { text-align: center !important; }
+.text-justify  { text-align: justify !important; }
+
+
+ul.haeckchen {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem 0 0 1.5rem;
+}
+
+ul.haeckchen li::before  {
+    font-family: FontAwesome;
+    content: $fa-var-check-circle;
+    float: left;
+    margin: -0.2rem -1.5rem;
+    padding: 0rem;
+    font-size: 1.3rem;
+    color: $green !important;
+
+}
+
+ul.haeckchen li {
+    margin: 0 0 0.45rem 0;
+
+}
+
+
+
+
+
