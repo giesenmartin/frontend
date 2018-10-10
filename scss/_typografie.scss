@@ -2,3 +2,89 @@
 .text-right  { text-align: right !important; }
 .text-center { text-align: center !important; }
 .text-justify  { text-align: justify !important; }
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.25em;
+}
+
+
+
+
+
+h2.sectionheader {
+    font-weight: 400;
+}
+
+
+.brand-before {
+    margin: 15px 0;
+}
+
+
+.brand-name {
+    margin: 0;
+    font-size: 3em;
+}
+
+
+hr {
+    max-width: 400px;
+}
+
+
+ul.haken {
+    margin-bottom: 0;
+    margin-left: -40px;
+    padding-bottom: 20px;
+    list-style: outside none none;
+    position: relative;
+}
+
+
+
+.styled li:before {
+    content: "\e013";
+    font-family: "Glyphicons Halflings";
+    line-height: 20px;
+    color: #732361;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 0.75em;
+
+}
+
+.styled li {
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.haken li:before {
+    content: "\e013";
+}

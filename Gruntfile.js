@@ -9,14 +9,19 @@
                 files: [
                     // Vendor scripts.
 
-
                     {
                         expand: true,
-                        cwd: 'bower_components/components-font-awesome/webfonts',
+                        cwd: 'bower_components/sass-bootstrap-glyphicons/fonts',
                         src: ['**/*.*'],
                         dest: '../giesenwebentwicklung/Resources/Public/Fonts/'
-                    }
+                    },
 
+                    {
+                      expand: true,
+                      cwd: 'bower_components/slick-carousel/slick/fonts',
+                      src: ['**/*.*'],
+                      dest: '../giesenwebentwicklung/Resources/Public/Fonts/'
+                    }
 
 
                 ]
@@ -37,6 +42,7 @@
                     'bower_components/bootstrap/dist/js/bootstrap.min.js',
                     'bower_components/jquery.easing/js/jquery.easing.js',
                     'bower_components/cookieconsent/build/cookieconsent.min.js',
+                    'bower_components/slick-carousel/slick/slick.js',
                     'scripts/giesen.js'
         ],
         dest: 'js/giesen.js'
@@ -117,4 +123,4 @@
     grunt.registerTask('dist-css', ['sass']);
     grunt.registerTask('build', ['sass', 'copy']);
     grunt.registerTask('default', ['dist-js','dist-css', 'watch']);
-},
+}
